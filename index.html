@@ -2,25 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rental Website</title>
-    <!-- LINK to CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="./style.css">
     <!-- Box Icons -->
-    <link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <a href="#" class="logo"><img src="img/jeep.png" alt=""></a>
+        <a href="#" class="logo"><img src="./img/jeep.png" alt=""></a>
+
         <div class="bx bx-menu" id="menu-icon"></div>
+
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#ride">Ride</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#reviews">About</a></li>
+            <li><a href="#about">About</a></li> <!-- changer a href = reviews to about -->
             <li><a href="#reviews">Reviews</a></li>
         </ul>
         <div class="header-btn">
@@ -28,17 +29,17 @@ href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
             <a href="#" class="sign-in">Sign In</a>
         </div>
     </header>
-    <!-- home -->
+    <!-- Home -->
      <section class="home" id="home">
         <div class="text">
-            <h1> <span> Looking </span> to <br>rent a car</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adi <br> pisicing elit. Quam, tenetur recusandae.</p>
+            <h1><span>Looking</span> to <br>rent a car</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adi <br> pisicing elit. Eius, quasi incidunt.</p>
             <div class="app-stores">
-                <img src="img/ios.png" alt="">
-                <img src="img/play.png" alt="">
+                <img src="./img/ios.png" alt="">
+                <img src="./img/play.png" alt="">
             </div>
         </div>
-
+        
         <div class="form-container">
             <form action="">
                 <div class="input-box">
@@ -53,38 +54,212 @@ href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
                     <span>Return Date</span>
                     <input type="date" name="" id="">
                 </div>
-                <input type="submit" value="Submit" class="btn">
+                <input type="submit" name="" id="" class="btn">
             </form>
         </div>
      </section>
+
      <!-- Ride -->
-     <section class="ride" id="ride">
+      <section class="ride" id="ride">
         <div class="heading">
-            <span>How Its work</span>
-            <h1>Rent With 3 Easy Steps</h1>
+            <span>How It Works</span>
+            <h1>Rent with 3 Easy Steps</h1>
         </div>
         <div class="ride-container">
             <div class="box">
-                <i class="bx bxs-map"></i>
-                <h2>Choose A Location</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus, quisquam asperiores neque eaque enim!</p>
-            </div>
-
-            <div class="box">
-                <i class="bx bxs-calendar-check"></i>
-                <h2>Pick-Up Date</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus, quisquam asperiores neque eaque enim!</p>
-            </div>
-
-            <div class="box">
-                <i class='bx bxs-calendar-star'></i>
-                <h2>Book A Car</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus, quisquam asperiores neque eaque enim!</p>
-            </div>
-
+                <i class='bx  bx-map'></i><!--changed bx-location to bx-map -->    
+                <h2>Choose a location</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae vel, tempora voluptatibus iure id delectus!</p>
         </div>
-     </section>
-     <!-- Link To Javascript -->
-      <script src="main.js"></script>
+
+            <div class="box">
+                <i class='bx  bx-calendar-check'  ></i>  
+                <h2>Pick-Up Date</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae vel, tempora voluptatibus iure id delectus!</p>
+        </div>
+
+            <div class="box">
+                <i class='bx  bx-calendar-star'  ></i> 
+                <h2>Book A Car</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae vel, tempora voluptatibus iure id delectus!</p>
+        </div>
+      </section>
+      <!-- Services -->
+      <section class="services" id="services">
+    <div class="heading">
+        <span>Best Services</span>
+        <h1>Explore Our Top Deals <br> From Top Rated Dealers</h1>
+    </div>
+
+    <!-- Only ONE services-container -->
+    <div class="services-container">
+        <!-- was an issue with improper nesting -->
+        <!-- Box 1 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="./img/car1.jpg" alt="">
+            </div>
+            <p>2017</p>
+            <h3>2018 Honda Civic</h3>
+            <h2>$58,500 | $358 <span>/month</span></h2>
+            <a href="#" class="btn">Rent Now</a>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="./img/car2.jpg" alt="">
+            </div>
+            <p>2017</p>
+            <h3>2018 Honda Civic</h3>
+            <h2>$58,500 | $358 <span>/month</span></h2>
+            <a href="#" class="btn">Rent Now</a>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="./img/car3.jpg" alt="">
+            </div>
+            <p>2017</p>
+            <h3>2018 Honda Civic</h3>
+            <h2>$58,500 | $358 <span>/month</span></h2>
+            <a href="#" class="btn">Rent Now</a>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="./img/car4.jpg" alt="">
+            </div>
+            <p>2017</p>
+            <h3>2018 Honda Civic</h3>
+            <h2>$58,500 | $358 <span>/month</span></h2>
+            <a href="#" class="btn">Rent Now</a>
+        </div>
+
+        <!-- Box 5 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="./img/car5.jpg" alt="">
+            </div>
+            <p>2017</p>
+            <h3>2018 Honda Civic</h3>
+            <h2>$58,500 | $358 <span>/month</span></h2>
+            <a href="#" class="btn">Rent Now</a>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="./img/car6.jpg" alt="">
+            </div>
+            <p>2017</p>
+            <h3>2018 Honda Civic</h3>
+            <h2>$58,500 | $358 <span>/month</span></h2>
+            <a href="#" class="btn">Rent Now</a>
+        </div>
+    </div>
+</section>
+
+       </section>
+       <!-- About -->
+        <section class="about" id="about">
+            <div class="heading">
+                <span>About Us</span>
+                <h1>Best Customer Experience</h1>
+            </div>
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="./img/about.png" alt="">
+                </div>
+                <div class="about-text">
+                    <span>About Us</span>
+                    <p>
+                        <strong>Driven by Innovation. Powered by Passion.</strong><br><br>
+                        At <strong>YourCompanyName</strong>, we are dedicated to transforming the driving experience.<br>
+                        With years of expertise in automotive engineering and design, we create vehicles that combine cutting-edge technology, superior performance, and stylish comfort.<br><br>
+                        Our mission is simple: to deliver more than just cars — we deliver journeys filled with excitement, safety, and reliability.<br>
+                        Whether you're navigating urban streets or embarking on open-road adventures, our vehicles are designed to elevate every mile.<br><br>
+                        Join us as we drive towards a smarter, greener, and more exhilarating future.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Reviews -->
+         <section class="reviews" id="reviews">
+            <div class="heading">
+                <span>Reviews</span>
+                <h1>What's Our Customers Say</h1>
+            </div>
+            <div class="review-container">
+                <div class="box">
+                    <div class="rev-img">
+                        <img src="./img/rev1.jpg" alt="">
+                    </div>
+                    <h2>Someone Name</h2>
+                    <div class="stars">
+                        <i class='bx  bxs-star'  ></i>
+                        <i class='bx  bxs-star'  ></i> 
+                        <i class='bx  bxs-star'  ></i>
+                        <i class='bx  bxs-star'  ></i> 
+                        <i class='bx  bxs-star-half'  ></i> 
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ratione, repudiandae praesentium sint voluptatem aliquam aperiam modi expedita!</p>
+                </div>
+
+                <div class="box">
+                    <div class="rev-img">
+                        <img src="./img/rev2.jpg" alt="">
+                    </div>
+                    <h2>Someone Name</h2>
+                    <div class="stars">
+                        <i class='bx  bxs-star'  ></i>
+                        <i class='bx  bxs-star'  ></i> 
+                        <i class='bx  bxs-star'  ></i>
+                        <i class='bx  bxs-star'  ></i> 
+                        <i class='bx  bxs-star-half'  ></i> 
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita saepe assumenda molestias eum blanditiis eligendi illum nobis ab!</p>
+                </div>
+
+                <div class="box">
+                    <div class="rev-img">
+                        <img src="./img/rev3.jpg" alt="">
+                    </div>
+                    <h2>Someone Name</h2>
+                    <div class="stars">
+                        <i class='bx  bxs-star'  ></i>
+                        <i class='bx  bxs-star'  ></i> 
+                        <i class='bx  bxs-star'  ></i>
+                        <i class='bx  bxs-star'  ></i> 
+                        <i class='bx  bxs-star-half'  ></i> 
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consectetur. Cum facilis dolor provident. Repellat dolorum ea nobis?</p>
+                </div>
+            </div>
+         </section>
+         <!-- NwsLetter -->
+          <section class="newsletter">
+            <h2>Subscribe To Newsletter</h2>
+            <div class="box">
+                <input type="text" placeholder="Enter your Email...">
+                <a href="#" class="btn">Subscribe</a>
+            </div>
+          </section>
+          <div class="copyright">
+            <p>&#169; Ritick Ranjan Singh Sardar All Right Reserved</p>
+            <div class="social">
+                <a href="#"><i class='bx  bxl-facebook'  ></i></a>
+                <a href="#"><i class='bx  bxl-instagram'  ></i></a>
+                <a href="#"><i class='bx  bxl-twitter'  ></i></a>
+                <!-- changed from 'bxl  bx-facebook to 'bx  bxl-facebook and so on-->
+            </div>
+          </div>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- --Link to JS-- -->
+    <script src="./main.js"></script>
 </body>
 </html>
